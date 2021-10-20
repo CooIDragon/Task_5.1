@@ -12,7 +12,7 @@ public class Main {
         System.out.print("Введите ширину = ");
         int w = readVar();
 
-        printLine(h, w);
+        printLines(h, w);
     }
 
     private static int readVar(){
@@ -36,6 +36,10 @@ public class Main {
         }
 
         System.out.println("*");
+    }
+
+    private static void printLines(int h, int w){
+        printLine(h, w);
 
         for (int i = 0; i < (h - 2); i++){
             System.out.print("|");
@@ -44,16 +48,9 @@ public class Main {
                 System.out.print(" ");
             }
 
-            System.out.print("|");
-
-            System.out.println();
-        }
-        System.out.print("*");
-
-        for (int i = 0; i < (w - 2); i++){
-            System.out.print("-");
+            System.out.println("|");
         }
 
-        System.out.println("*");
+        printLine(h, w);
     }
 }
