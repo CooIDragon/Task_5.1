@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static boolean testVar(int k){
-        boolean m = k > 3;
+        boolean m = k >= 3;
         return m;
     }
 
